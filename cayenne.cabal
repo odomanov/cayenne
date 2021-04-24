@@ -1,0 +1,78 @@
+cabal-version:      2.4
+name:               cayenne
+version:            0.1.0.0
+
+-- A short (one-line) description of the package.
+-- synopsis:
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Oleg Domanov
+maintainer:         odomanov@yandex.ru
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README
+
+executable cayenne
+    main-is:          cayenne.hs
+
+    -- Modules included in this executable, other than Main.
+    other-modules:
+        BinParse
+        Binary
+        CITranslate
+        CParser
+        CSyntax
+        CUtil
+        Checker
+        Env
+        Erase
+        Error
+        FString
+        FindDiff
+        IReduce
+        ISyntax
+        ISyntaxPP
+        IUtil
+        Id
+        Lex
+        Libs.IOUtil
+        Libs.ListUtil
+        Libs.Parse
+        Libs.Pretty
+        Libs.Trace
+        Literal
+        MiscId
+        PPrint
+        Position
+        PreStrings
+        Rational
+        SCC
+        Simplify
+        TMonad
+        ToGHC
+        ToLML
+        TrivRed
+        TypeCheck
+        UIdSet
+        Util
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.15
+    				, pretty >=1.1
+    				, containers >=0.6
+    				, process >=1.6
+    				, directory >=1.3
+    				, old-time
+    hs-source-dirs:   .
+    default-language: Haskell2010
